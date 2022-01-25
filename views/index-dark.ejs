@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from slimhamdi.net/moscow/demos/index-dark.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] Mon, 22 Nov 2021 08:31:02 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>Edwin Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../fonts.googleapis.com/css716c.css?family=Lato:400,700,900" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.animatedheadline.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/skins/yellow.css" />
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldrenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+	<link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+	<link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Template JS Files -->
+    <script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body class="dark">
+    <!-- Preloader Start -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="images/styleswitcher/purple.png" alt="purple"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="images/styleswitcher/red.png" alt="red"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="images/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="images/styleswitcher/blue.png" alt="blue"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="images/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="images/styleswitcher/magenta.png" alt="magenta"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="images/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="images/styleswitcher/orange.png" alt="orange"/></a>
+                </li>
+				<li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="images/styleswitcher/green.png" alt="green"/></a>
+                </li>
+				<li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="images/styleswitcher/yellow.png" alt="yellow"/></a>
+                </li>
+            </ul>
+			<h4>BODY SKIN</h4>
+
+           <label> <input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
+		<label> <input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark"  checked="checked" />  Dark</label><br>
+			
+            
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+		<div class="main-picture woman hide-on-med-and-down">
+		</div>
+        <div id="bl-main" class="bl-main">
+            <!-- Top Left Section Starts -->
+            <section class="topleft">
+                <div class="bl-box row valign-wrapper">
+                    <div class="row valign-wrapper mb-0">
+                        <div class="title-heading">
+                            <div class="selector uppercase" id="selector">
+                                <h3 class="ah-headline p-none m-none">
+                                    <span class="font-weight-400">Hi There ! I'm</span>
+									<span class="my-name">Edwin</span>
+                                    <span class="ah-words-wrapper">
+										<b class="is-visible">Android Developer</b>
+										<b>Web Designer</b>
+										<b>Cloud Architect</b>
+									</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Top Left Section Ends -->
+            <!-- About Section Starts -->
+            <section>
+                <!-- About Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="About">About </span>
+                            <span data-hover="Me">Me</span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- About Title Ends -->
+                <!-- About Expanded Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title custom-page-title">
+                        <h2 class="center-align">
+                            <span>About</span>
+                            <span>Me</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container infos">
+						<!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-vcard" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+						<!-- Divider Ends -->
+						<!-- Personal Informations Starts -->
+                        <div class="row">
+							<!-- Picture Starts -->
+                            <div class="col s12 m4 profile-picture show-on-medium-and-down section-padding">
+								<img src="images/eduin.jpg" class="responsive-img my-picture" alt="My Photo">
+                            </div>
+							<!-- Picture Ends -->
+                            <div class="col s12 m8 l12 xl12 personal-info section-padding">
+                                <h6 class="uppercase"><i class="fa fa-user"></i> Personal Info</h6>
+								<div class="col m12 l12 xl9 p-none">
+									<p class="second-font">I am junior Information Technology undergraduate pursuing Bachelor of Science at Maseno University. 
+                                        I primarily write android applications using Java. I also possess skills in frontend web and API development.
+                                         I write API's with Javascript and Nodejs. If you want a cloud architecture for your enterprise or organisation then I'm also your guy.
+									</p>
+								</div>
+                                <div class="col s12 m12 l6 p-none">
+                                    <ul class="second-font list-1">
+                                        <li><span class="font-weight-700">First Name: </span>Edwin</li>
+                                        <li><span class="font-weight-700">Last Name: </span>Shitakwa</li>
+                                        <li><span class="font-weight-700">Date of birth: </span>15 September 1999 </li>
+                                        <li><span class="font-weight-700">Nationality: </span>Kenyan</li>
+										
+                                    </ul>
+                                </div>
+                                <div class="col s12 m12 l6 p-none">
+                                    <ul class="second-font list-2">
+                                        <li><span class="font-weight-700">Phone: </span>+254707278158</li>
+                                        <li><span class="font-weight-700">Address: </span>Nairobi, Kenya</li>
+                                        <li><span class="font-weight-700">Email: </span>edwinshitakwa8@gmail.com</li>
+                                        <li><span class="font-weight-700">Spoken Langages: </span>English - Swahili</li>
+										
+                                    </ul>
+                                </div>
+                                <a href="files/edwincv.pdf" download="edwin resume" class="btn font-weight-700">
+									Download Resume <i class="fa fa-file-pdf-o"></i>
+								</a>
+								
+                            </div>
+                        </div>
+						<!-- Personal Informations Ends -->
+                    </div>
+					<!-- Resume Starts -->
+					<div class="resume-container">
+                        <div class="container">
+                            <div class="valign-wrapper row">
+								<!-- Resume Menu Starts -->
+                                <div class="resume-list col l4 section-padding">
+                                    <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> Experience</h6>
+                                        </div>
+                                    </div>
+                                    <div class="resume-list-item" data-index="1" id="resume-list-item-1">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> Education</h6>
+                                        </div>
+                                    </div>
+                                    <div class="resume-list-item" data-index="2" id="resume-list-item-2">
+                                        <div class="resume-list-item-inner">
+                                            <h6 class="resume-list-item-title uppercase"><i class="fa fa-star"></i> Skills</h6>
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- Resume Menu Ends -->
+								<!-- Resume Content Starts -->
+                                <div class="col s12 m12 l8 resume-cards-container section-padding">
+                                    <div class="resume-cards">
+										<!-- Experience Starts -->
+                                        <div class="resume-card resume-card-0" data-index="0">
+											<!-- Experience Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> Experience</div>
+                                            </div>
+											<!-- Experience Header Title Ends -->
+											<!-- Experience Content Starts -->
+                                            <div class="resume-card-body experience">
+                                                <div class="resume-card-body-container second-font">
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Software Developer - </span>Digimatt Solutions</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2021 November - 2022 January</span>
+														<p>Responsible for creating and designing beautiful, dynamic and responsive websites.
+                                                             Hosting Websites with custom domains and storing client's data. 
+                                                            Occassionally creating email accounts for organizations from their domains.</p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>IoT Developer - </span>iLab Africa</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2021 February - 2021 March</span>
+														<p>Did an introductory course on Internet of Things. The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, 
+                                                            software, and other technologies for the purpose of connecting and exchanging data with other 
+                                                            devices and systems over the internet. </p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                    <span class="separator"></span>
+													<!-- Single Experience Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>AWS Solutions Architect Associate - </span>Digital Divide Data</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2020 September - 2020 November</span>
+														<p>Evaluated proposals & recommended the best technical solutions to migrate applications to AWS.  
+                                                         Provided complete infrastructure solutions to 30+ clients including configuration Storage components.
+                                                         Architecting Secure VPC Solutions in AWS with the help of Network ACLS, Security Groups, Public 
+                                                         and Private Network Configurations, while also designing an effective backup strategy according 
+                                                         to the client requirements & Specifications.  </p>
+                                                    </div>
+													<!-- Single Experience Ends -->
+                                                </div>
+                                            </div>
+											<!-- Experience Content Starts -->
+                                        </div>
+										<!-- Experience Ends -->
+										<!-- Education Starts -->
+                                        <div class="resume-card resume-card-1" data-index="1">
+											<!-- Education Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> Education</div>
+                                            </div>
+											<!-- Education Header Title Starts -->
+                                            <div class="resume-card-body education">
+                                                <div class="resume-card-body-container second-font">
+													
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Bachelor Degree - </span>Maseno University</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2018 - 2022</span>
+														<p>Pursuing a bachelor's degree in Information Technology.</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                </div>
+                                            </div>
+                                        </div>
+										<!-- Education Ends -->
+										<!-- Skills Starts -->
+                                        <div class="resume-card resume-card-2" data-index="2">
+											<!-- Skills Header Title Starts -->
+                                            <div class="resume-card-header">
+                                                <div class="resume-card-name"><i class="fa fa-star"></i> Skills</div>
+                                            </div>
+											<!-- Skills Header Title Starts -->
+                                            <div class="resume-card-body skills">
+                                                <div class="resume-card-body-container second-font">
+                                                    <div class="row">
+														<!-- Skills Row Starts -->
+                                                        <div class="col s6">
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">html</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">javascript</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">css</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">java</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">AWS</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Docker</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+                                                        </div>
+														<!-- Skills Row Ends -->
+														<!-- Skills Row Starts -->
+                                                        <div class="col s6">
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Node js</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Android Development</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Git and Github</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Linux</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">Windows</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+															<!-- Single Skills Starts -->
+                                                            <div class="resume-content">
+																<h6 class="uppercase">SQL</h6>
+																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-empty"></i> <i class="fa fa-star-o"></i></p>
+                                                            </div>
+															<!-- Single Skills Ends -->
+                                                        </div>
+														<!-- Skills Row Ends -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+										<!-- Skills Ends -->
+                                    </div>
+                                </div>
+								<!-- Resume Content Ends -->
+                            </div>
+                        </div>
+                    </div>
+					<!-- Resume Ends -->
+					<!-- Fun Facts Starts -->
+                    <div class="container badges">
+                        <div class="row">
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                <h3>
+                                    <i class="fa fa-briefcase"></i>
+									<span class="font-weight-900">2+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Years Experience</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                <h3>
+                                    <i class="fa fa-handshake-o"></i>
+									<span class="font-weight-900">10+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Done Projects</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                            <!-- Fact Badge Item Starts -->
+                            <div class="col s12 m4 l4 center-align">
+                                 <h3>
+                                    <i class="fa fa-heart-o"></i>
+									<span class="font-weight-900">8+</span>
+                                </h3>
+                                <h6 class="uppercase font-weight-700">Happy customers</h6>
+                            </div>
+                            <!-- Fact Badge Item Ends -->
+                        </div>
+                    </div>
+					<!-- Fun Facts Ends -->
+                </div>
+                <!-- End Expanded About -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- About Ends -->
+            <!-- Portfolio Starts -->
+            <section id="bl-work-section">
+				<!-- Portfolio Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="my">my </span>
+                            <span data-hover="portfolio">portfolio</span>
+                        </h2>
+                    </div>
+                </div>
+				<!-- Portfolio Title Ends -->
+                <!-- Portfolio Expanded Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="my">my </span>
+                            <span data-hover="portfolio">portfolio</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container">
+                        <!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-suitcase" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+                        <!-- Divider Ends -->
+                        <div class="row center-align da-thumbs" id="bl-work-items">
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-1">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-1.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Smart Recipes</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-2">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-2.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Docker Containers</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-3">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-3.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">F-Authentication</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-4">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-4.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">C-Trade APIs</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-5">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-5.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Maseno Hostels App</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                            <!-- Project Starts -->
+                            <div class="col s12 m6 l6 xl4" data-panel="panel-6">
+                                <a href="#">
+									<img class="responsive-img" src="images/projects/project-6.jpg" alt="Project" />
+									<div class="valign-wrapper"><span class="font-weight-700 uppercase">Maseno Hostels Web</span></div>
+								</a>
+                            </div>
+                            <!-- Project Ends -->
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Expanded Ends -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- Portfolio Section Ends -->
+            <!-- Contact Section Starts -->
+            <section>
+				<!-- Contact Title Starts -->
+                <div class="bl-box valign-wrapper">
+                    <div class="page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="get">get </span>
+                            <span data-hover="in touch">in touch</span>
+                        </h2>
+                    </div>
+                </div>
+				<!-- Contact Title Ends -->
+                <!-- Expanded Contact Starts -->
+                <div class="bl-content">
+                    <!-- Main Heading Starts -->
+                    <div class="container page-title center-align">
+                        <h2 class="center-align">
+                            <span data-hover="get">get </span>
+                            <span data-hover="in touch">in touch</span>
+                        </h2>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <div class="container">
+                        <!-- Divider Starts -->
+                        <div class="divider center-align">
+                            <span class="outer-line"></span>
+                            <span class="fa fa-envelope-open" aria-hidden="true"></span>
+                            <span class="outer-line"></span>
+                        </div>
+                        <!-- Divider Ends -->
+                        <div class="row contact section-padding">
+							<!-- Contact Infos Starts -->
+                            <div class="col s12 m5 l5 xl4 leftside">
+								<!-- Contacts Starts -->
+                                <h6 class="font-weight-700 uppercase">Phone</h6>
+                                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +254707278158</span>
+								<h6 class="font-weight-700 uppercase">Email</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> edwinshitakwa8@gmail.com</span>
+								<h6 class="font-weight-700 uppercase">Address</h6>
+								<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Nairobi, Kenya</span><br>
+								<!-- Contacts Ends -->
+								<!-- Social Media Profiles Starts -->
+                                <h6 class="font-weight-700 uppercase">Social Profiles</h6>
+                                <div class="social">
+                                    <ul class="list-inline social social-intro center-align p-none">
+                                        
+                                        <li class="twitter"><a href="https://twitter.com/MeeseksE"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/edwin-salikho-535a5717b/"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+								<!-- Social Media Profiles Ends -->
+                            </div>
+							<!-- Contact Infos Ends -->
+							<!-- Contact Form Starts -->
+                            <div class="col s12 m7 l7 xl8 rightside">
+								<h6 class="uppercase m-none font-weight-700">Feel free to drop me a line</h6>
+								<div class="row">
+									<p class="col s12 m12 l12 xl10 second-font">
+										If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.
+									</p>
+								</div>
+                                <form class="contactform" method="POST" action="/index-dark">
+                                    <!-- Name Field Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-user prefix"></i>
+                                        <input id="name" name="name" type="text" class="validate" required>
+                                        <label class="font-weight-400" for="name">Your Name</label>
+                                    </div>
+                                    <!-- Name Field Ends -->
+                                    <!-- Email Field Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input id="email" type="email" name="email" class="validate" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                    <!-- Email Field Ends -->
+                                    <!-- Comment Textarea Starts -->
+                                    <div class="input-field second-font">
+                                        <i class="fa fa-comments prefix"></i>
+                                        <textarea id="comment" name="comment" class="materialize-textarea" required></textarea>
+                                        <label for="comment">Your Comment</label>
+                                    </div>
+                                    <!-- Comment Textarea Ends -->
+									<!-- Submit Form Button Starts -->
+                                    <div class="col s12 m12 l9 xl8 submit-form">
+                                        <button class="btn font-weight-700" type="submit" name="send">
+											Send Message <i class="fa fa-send"></i>
+										</button>
+                                    </div>
+                                    <!-- Submit Form Button Ends -->
+                                    <div class="col s12 m12 l8 xl8 form-message">
+                                        <span class="output_message center-align font-weight-700 uppercase"></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Contact Form Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Expanded Contact Ends -->
+                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+            </section>
+            <!-- Contact Section Ends -->
+            <!-- Portfolio Panel Items Starts -->
+            <div class="bl-panel-items" id="bl-panel-work-items">
+				<!-- Project Starts -->
+                <div data-panel="panel-1">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img class="responsive-img" src="images/projects/project-1.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Recipe App</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Wilson Oginga</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/07/2021</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">30/07/2021</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">java, kotlin</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://play.google.com/store/apps/details?id=com.tdbsoftrecipesappv1.smartrecipe" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-2">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img class="responsive-img" src="images/projects/project-2.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Docker Containers</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Personal</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">02/10/2021</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">03/10/2021</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">java, docker, mysql</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://github.com/edwin001-tech/CreditCard-CreditScore" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-3">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img class="responsive-img" src="images/projects/project-3.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">F-Authentication</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Personal</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">15/08/2021</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">18/08/2021</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">java, firebase</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://github.com/edwin001-tech/FAuth" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-4">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img class="responsive-img" src="images/projects/project-4.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">C-Trade APIs</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">Personal</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">25/04/2020</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">30/04/2020</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">javascript, express, mysql</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://github.com/edwin001-tech/COMTRA_API" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-5">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-5.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Maseno Hostels App</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">TDB</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">07/09/2021</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">Ongoing</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">java, kotlin</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://github.com/anorld-droid/MasenoHostels" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+				<!-- Project Starts -->
+                <div data-panel="panel-6">
+                    <div class="row">
+                        <!-- Project Main Content Starts -->
+                        <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                            <img src="images/projects/project-6.jpg" alt="project" />
+                        </div>
+                        <!-- Project Main Content Ends -->
+                        <!-- Project Details Starts -->
+                        <div class="col s12 l6 xl6 section-padding">
+                            <h3 class="font-weight-700 uppercase">Maseno Hostels Web</h3>
+                            <ul class="project-details second-font">
+                                <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">TDB</span></li>
+                                <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">07/09/2021</span></li>
+								<li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">Ongoing</span></li>
+                                <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Used Technologies</span> : <span class="font-weight-400 uppercase">Python, sqlite, django, postgres</span></li>
+                            </ul>
+                            <hr>
+                            <a href="https://github.com/edwin001-tech/HMS" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </div>
+                </div>
+				<!-- Project Ends -->
+		
+				<!-- Project Ends -->
+                <!-- Portfolio Navigation Starts -->
+                <nav>
+                    <!-- Previous Work Icon Starts -->
+                    <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
+                    <!-- Previous Work Icon Ends -->
+                    <!-- Close Work Icon Starts -->
+					<img alt="close" src="images/close-button.png" class="control-button bl-icon-close" />
+                    <!-- Close Work Icon Ends -->
+                    <!-- Next Work Icon Starts -->
+                    <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
+                    <!-- Previous Work Icon Ends -->
+                </nav>
+                <!-- Portfolio Navigation Ends -->
+            </div>
+            <!-- Portfolio Panel Items Ends -->
+        </div>
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
+    <script src="js/boxlayout.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Live Style Switcher JS File - only demo -->
+    <script src="js/styleswitcher.js"></script>
+</body>
+
+
+<!-- Mirrored from slimhamdi.net/moscow/demos/index-dark.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] Mon, 22 Nov 2021 08:32:02 GMT -->
+</html>
