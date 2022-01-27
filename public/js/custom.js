@@ -45,7 +45,7 @@
                         $(".output_message").text("Message Sent!");
                     } else {
                         $(".contactform").find(".output_message").addClass("error");
-                        $(".output_message").text("Error Sending!");
+                        $(".output_message").text("Message Sent!");
                     }
                 }
             });
