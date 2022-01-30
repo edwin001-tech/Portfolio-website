@@ -10,7 +10,7 @@ COPY . .
 # Bind app to port 8080
 EXPOSE 3000
 # Command to run app
-CMD [ "node", "nodemon index.js" ]
+CMD [ "node", "index.js" ]
 
 
 
