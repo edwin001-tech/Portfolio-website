@@ -12,11 +12,19 @@ app.set('views', 'views');
 
 
 const mainroutes = require('./routes/main-routes');
-// const adminData = require('./routes/admin');
-// const shopRoutes = require('./routes/shop');
+const database = require('./util/database');
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+database.execute('SELECT * FROM comments')
+.then(result => {
+  console.log(result);
+})
+.catch(err => {
+  console.log(err);
+});
 
 app.get('/index-dark', mainroutes.routes);
 app.post('/index-dark', mainroutes.routes);
