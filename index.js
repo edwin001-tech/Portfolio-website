@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // });
 
 app.get('/index-dark', mainroutes.routes);
-app.use('/index-dark', mainroutes.routes);
+app.post('/index-dark', mainroutes.routes);
 app.use(errorcontroller.get404);
 
 
