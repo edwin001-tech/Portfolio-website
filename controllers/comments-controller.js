@@ -9,6 +9,7 @@ exports.postComment = (req, res, next) =>{
     yourcomment
     .save()
     .then(() => {
+        console.log(req.body);
         res.redirect('/index-dark');
     })
     .catch(err => console.log(err));

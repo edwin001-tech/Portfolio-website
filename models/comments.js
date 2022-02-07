@@ -7,7 +7,7 @@ module.exports = class Comment{
     }
 
     save(){
-       return database.execute('INSERT INTO comments (name, email, comment) VALUES (?, ?, ?, ?)'
+       return database.execute('INSERT INTO comments (name, email, comment) VALUES (?, ?, ?)',
         [this.name, this.email, this.comment]);
 
     }
