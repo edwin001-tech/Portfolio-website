@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/index-dark', mainroutes.routes);
 app.post('/index-dark', mainroutes.routes);
-app.use(errorcontroller.get404);
+app.get('/404', errorcontroller.get404);
 
 
 //go to main-routes.js in routes folder
