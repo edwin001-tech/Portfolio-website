@@ -32,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/index-dark', mainroutes.routes);
 app.post('/index-dark', mainroutes.routes);
+app.get('/display', mainroutes.routes);
 app.get('/404', errorcontroller.get404);
 
 

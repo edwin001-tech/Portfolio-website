@@ -12,6 +12,9 @@ router.post('/index-dark', commentscontroller.postComment);
 //main page
 router.get('/index-dark', pagecontroller.getIndexPage);
 
+//display comments
+router.get('/display', commentscontroller.getComments);
+
 //404
 // router.get('/404', errorcontroller.get404);
   
